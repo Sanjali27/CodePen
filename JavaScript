@@ -1,0 +1,16 @@
+$(document).ready(function(){
+  function getQuote(){
+    var quotes = ["PEOPLE NEED DRAMATIC EXAMPLES TO SHAKE THEM OUT OF APATHY AND I CAN’T DO THAT AS BRUCE WAYNE.","SOMEONE LIKE YOU, SOMEONE WHO WILL RATTLE THE CAGES","BATS FRIGHTEN ME. IT'S TIME THE WORLD SHARE MY DREAD.", "YOU EITHER DIE A HERO OR LIVE LONG ENOUGH TO SEE YOURSELF BECOME THE VILLAIN.","BATMAN HAS NO LIMITS.", "A HERO CAN BE ANYONE.","I AM AN AGENT OF CHAOS"," It's not who I am underneath, but what I do that defines me.", " This is what happens when an unstoppable force meets an immovable object. You truly are incorruptible, aren't you? You won't kill me out of some misplaced sense of self-righteousness. And I won't kill you because you're just too much fun. I think you and I are destined to do this forever.", "He's the hero Gotham deserves, but not the one it needs right now.", " Endure, Master Wayne. Take it. They'll hate you for it, but that's the point of Batman, he can be the outcast.", "When Gotham is ashes, you have my permission to die", "The night is darkest just before the dawn. And I promise you, the dawn is coming.", " Some men just want to watch the world burn.","You see, their morals, their code, it's a bad joke.", " See, I'm not a monster. I'm just ahead of the curve.", "There's a storm coming.", "If you are good at something, don't do it for free.", "Why so serious?", "You complete me", "All it takes is one bad day."];
+    var author= ["-The Batman","-The Batman","-The Batman","-Harvey Dent", "-The Batman","-The Batman","-The Joker","-Bryce Wayne","-The Joker", "-Jim Gordon","-Alfred", "-Bane", "-Harvey Dent"," -Alfred", "-The Joker","-The Joker", "-Selina Kyle", "-The Joker", "-The Joker", "-The Joker", "The Joker"];
+    var randomNumber= Math.floor((Math.random()*quotes.length));
+    var randomQuote = quotes[randomNumber];
+    var randomAuthor = author[randomNumber];
+    
+    $(".quote").text(randomQuote);
+    $(".author").text(randomAuthor);
+  }
+    $(".btn").on("click" , function(){
+      getQuote();
+    });
+ 
+});
