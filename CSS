@@ -1,0 +1,41 @@
+body{
+background-color:white;
+}
+h1{
+  text-align:center;
+  padding:10px;
+  font-size:50px;
+ 
+
+}
+p{
+  text-align:center;
+  font-size:25px;
+  color:grey;
+  font-style: italic;
+}
+
+img{
+  padding: 20px;
+}
+
+.quotes{
+  background-color: black;
+  color:white;
+  padding:20px;
+  font-size: 20px;
+  height: auto;
+  
+}
+.quote{
+  font-size: 30px;
+}
+.author{
+  font-style: italic;
+  font-size:20px;
+}
+footer{
+  padding:20px;
+  font-size:20px;
+  
+}
